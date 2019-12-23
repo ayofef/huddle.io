@@ -99,7 +99,7 @@ body {
     .intro__stat--details-text {
       color: rgba(0, 37, 46, 0.6); }
     .intro__stat--details-communities::before {
-      background-image: url(../../images/icon-communities.svg);
+      background-image: url(../images/icon-communities.svg);
       content: "";
       display: block;
       position: relative;
@@ -108,7 +108,7 @@ body {
       width: 4rem;
       height: 3rem; }
     .intro__stat--details-messages::before {
-      background-image: url(../../images/icon-messages.svg);
+      background-image: url(../images/icon-messages.svg);
       content: "";
       display: block;
       position: relative;
