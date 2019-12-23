@@ -1,0 +1,54 @@
+.curved-img{
+
+    & img{
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+    }
+}
+.growth,
+.users{
+    background-color: #f5fbff;
+}
+.conversation {
+    padding: 8rem 0;
+}
+.together{
+    padding: 5rem 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__text{
+        flex:0 1 45%;
+
+        &-heading{
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__image{
+        flex: 0 1 45%;
+
+        &-img{
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+
+.cto{
+    text-align: center;
+    padding: 15rem 0;
+
+    &__heading{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}

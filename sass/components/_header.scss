@@ -1,0 +1,35 @@
+.masthead{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+
+
+    &__logo{
+        &--icon{
+            width: 16rem;
+        }
+    }
+
+    &__link{
+        
+        & a:link,
+        & a:visited{
+        color: $pink;
+        padding: .6rem 2rem;
+        border: .1rem solid $pink;
+        border-radius: 3rem;
+        font-size: 1.3rem;
+        text-decoration: none;
+        transition: all .2s ease-out;
+        }
+
+        & a:hover,
+        & a:active{
+            background-color: $pink;
+            color: #fff;
+        }
+
+    }
+}

@@ -1,0 +1,83 @@
+.intro{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8rem 0 8rem 0;
+
+    & > :not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    &__heading{
+        font-size: 4rem;
+    }
+
+    &__details{
+        width: 50%;
+        margin: 0 auto;
+    }
+    &__link{
+        padding: 1.5rem 5.5rem;
+        background-color: $pink;
+        border-radius: 3rem;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+
+        &:active,
+        &:target{
+            box-shadow: 0 .2rem .6rem rgba(0,0,0,.4);
+        }
+
+        &:hover{
+            filter: brightness(80%);
+        }
+
+        
+    }
+    &__img{
+        max-width: 100%;
+        display: inline-block;
+        padding-top: 5rem;
+    }
+    &__stat{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        &--details{
+
+            &-heading{
+                font-size: 6rem;
+                font-weight: 700;
+            }
+            &-text{
+                color: rgba($dark, .6);
+            }
+
+            &-communities::before{
+                background-image: url(../../images/icon-communities.svg);
+                content: "";
+                display: block;
+                position: relative;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 4rem; 
+                height: 3rem;
+
+            }
+            &-messages::before{
+                background-image: url(../../images/icon-messages.svg);
+                content: "";
+                display: block;
+                position: relative;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 4rem; 
+                height: 3rem;
+
+            }
+        }
+    }
+}

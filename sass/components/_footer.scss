@@ -1,0 +1,130 @@
+.footer{
+    color:#fff;
+    background-color: $dark;
+    
+    &__flexing{
+        padding: 5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__footnote{
+        width: 40%;
+    }
+
+    &__logo{
+        
+        padding-bottom: 2rem;
+        &--icon{
+            width: 16rem;
+            filter: brightness(0%) invert(1);
+        }
+    }
+
+    &__contact{
+        padding-bottom: 1.5rem;
+        
+        &--icon{
+            width: 1.6rem;
+        }
+        &--text{
+            display: inline;
+            margin-left: 1rem;
+        }
+    }
+
+    &__social{
+        padding-top: 4rem;
+
+        & > :not(:last-child){
+            margin-right: 1rem;
+        }
+
+        &--icon{
+            width: 3rem;
+            height:3rem;
+            fill: #fff;
+        }
+    }
+
+    &__newsletter{
+        width: 40%;
+
+        &--heading{
+            font-size: 2rem;
+            font-weight: 600;
+            padding-bottom: 2rem;
+        }
+
+        &--form{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            &-input{
+                border: none;
+                padding: 1rem;
+                font-weight: 600;
+                color: #555;
+                border-radius: .3rem;
+                display: block;
+                margin-bottom: 1.5rem;
+                flex: 2;
+                box-sizing: border-box;
+
+                &::placeholder{
+                    color: #999;
+                    font-weight: 400;
+                }
+            }
+
+            &-btn{
+                border:none;
+                background-color: $pink;
+                padding: 1rem 2.5rem;
+                border-radius: .3rem;
+                color:#fff;
+                margin-left: 3rem;
+                outline: none;
+                display: block;
+                cursor: pointer;
+                box-sizing: border-box;
+
+
+                &:hover,
+                &:active{
+                    filter: brightness(80%);
+                }
+            }
+
+
+        }
+    }
+
+    
+    
+}
+
+.footer__address,
+.footer__newsletter--text{
+    padding-bottom: 2rem;
+}
+
+.attribution{
+    text-align: center;
+    padding: 2rem;
+
+    & a:link,
+    & a:visited{
+        color: $pink;
+        transition: all .2s ease-out;
+        text-decoration: none;
+    }
+
+    & a:hover,
+    & a:active{
+        color: #fff;
+    }
+}
